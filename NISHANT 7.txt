@@ -1,27 +1,18 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
-    // Write C code here
-    printf("Start small. Ship something.");
+    int n, a = 0, b = 1, c;
 
-    return 0;
-}#include <stdio.h>
-
-int main()
-{
-    int n, i;
-    int sum = 0;
-
-    printf("Enter a number: ");
+    printf("Enter how many terms: ");
     scanf("%d", &n);
 
-    for(i = 1; i <= n; i++)
-    {
-        sum = sum + i;
-    }
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", a);
 
-    printf("Sum = %d", sum);
+        c = a + b;
+        a = b;
+        b = c;
+    }
 
     return 0;
 }
